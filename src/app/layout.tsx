@@ -1,6 +1,10 @@
-import { Inter } from 'next/font/google'
+import { Plus_Jakarta_Sans } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const jakarta = Plus_Jakarta_Sans({
+  weight: ['400', '500', '600', '700'],
+  style: ['normal', 'italic'],
+  subsets: ['latin-ext'],
+})
 
 export const metadata = {
   title: 'Leadster Test Igor',
@@ -12,7 +16,7 @@ export default function RootLayout({children}: {
 }) {
   return (
     <html lang="pt-br">
-      <body className={inter.className}>{children}</body>
+      <body className={jakarta.className}>{children}</body>
     </html>
   );
 }
