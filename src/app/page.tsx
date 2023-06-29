@@ -1,4 +1,4 @@
-import Header from '@/components/Templates/Header';
+import Header from '@/components/Organisms/Header';
 import GlobalStyles from '../../GlobalStyles';
 
 export default function Home() {
